@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-keyboard"></i> Kawaii Typing Test</h1>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <i class="fas fa-clock"></i>
+                <span id="timer">60</span>s
+            </div>
+            <div class="stat-box">
+                <i class="fas fa-tachometer-alt"></i>
+                <span id="wpm">0</span> WPM
+            </div>
+            <div class="stat-box">
+                <i class="fas fa-check-circle"></i>
+                <span id="accuracy">0</span>%
+            </div>
+        </div>
+        
+        <div class="text-display" id="text-display">
+            Click START and type the text below!
+        </div>
+        
+        <textarea id="text-input" placeholder="Click START and begin typing here..." disabled></textarea>
+        
+        <div class="controls">
+            <button id="start-btn"><i class="fas fa-play"></i> START</button>
+            <button id="stop-btn" disabled><i class="fas fa-stop"></i> STOP</button>
+            <button id="reset-btn" disabled><i class="fas fa-redo"></i> RESET</button>
+        </div>
+        
+        <div class="footer">
+            <p>Type as fast as you can! • Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
